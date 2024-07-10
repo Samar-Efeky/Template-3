@@ -1,0 +1,141 @@
+a:hover{
+    color: rgb(139, 134, 134);
+}
+/* navigation-bar  .............................................................................................*/
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: rgb(5, 5, 129);
+    z-index: 10;
+}
+.navbar-toggler-icon{
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.nav-item{
+    position: relative;
+  }
+.nav-item a{
+    position:relative;
+    z-index: 3;
+    color: white;
+}
+.nav-item a:hover ,
+.nav-item a:focus {
+    color: rgb(139, 134, 134);
+}  
+  .nav-item::after{
+  content:"";
+  z-index: 2;
+  border-bottom:2px solid white;
+  width: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.2s;
+  }
+  .nav-item:hover::after{
+    width:100%;  
+  }
+/* header  ......................................................................................................*/
+h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+#header-content{
+    background-image: url(../images/image1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.overley{
+    background-color:rgba(0,0,0,0.6);
+}
+
+#icon-link i{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s;
+}
+#icon-link i:hover{
+    background-color:rgb(5, 5, 129);
+    color: white;
+}
+/* Second Section  Introduction.............................................................................................*/
+.item h2, .item h3,span{
+    color:rgb(8, 8, 181) ;
+}
+.btn-page{
+    background-color:rgb(8, 8, 181) ; 
+    color: white;
+}
+.btn-page:hover,
+.btn-page:active{
+    background-color:rgb(5, 5, 125) ;
+    color: white;
+}
+#Icons{
+    background-image: url(../images/image3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* our work .........................................................................................................*/
+.work-overley{
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.3s;
+    visibility: hidden;
+    cursor: pointer;
+}
+.work-item:hover .work-overley{
+    visibility: visible;
+}
+.color{
+    height: 10px;
+    background-color: rgb(8, 8, 181);
+    position:absolute;
+    bottom: -50%; 
+    width: 100%;
+    z-index: 4;
+    transition:0.3s;
+}
+.overley-content {
+    position: absolute;
+    z-index: 4;
+    bottom: 100%;
+    transition: 0.3s;
+    width: 100%;
+}
+.work-overley:hover .overley-content{
+    bottom: 20%;
+
+}
+.work-overley:hover .color{
+    bottom: 0%;
+}
+/* footer  ................................................................................................*/
+#footer-page{
+    background-image: url(../images/image1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+}    
+.line{
+    height: 1.5px;
+}
+.line div{
+    height: 10px;
+}
+input{
+    
+    border:2px solid white ;
+}
+input::placeholder{
+    color: white;
+}
+.subscribe{
+    background-color:rgb(8, 8, 181);
+}
+.contact-us{
+    color: white;
+}
